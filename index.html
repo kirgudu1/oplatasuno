@@ -31,8 +31,8 @@
     .section_p{margin:8px 0 0 0;color:var(--muted)}
     .section_list{margin:12px 0;padding-left:18px}
     .section_list li{margin:6px 0}
-    .section_table{width:100%;border-collapse:collapse;margin-top:12px}
-    .section_table th,.section_table td{border:1px solid var(--border);padding:12px;text-align:left;color:var(--text)}
+    .section_table{width:100%;border-collapse:collapse;margin-top:12px;min-width:640px}
+    .section_table th,.section_table td{border:1px solid var(--border);padding:12px;text-align:left;color:var(--text);white-space:nowrap}
     .section_table th{background:#f3f4f6}
     .section_attention{background:#ecfdf5;border:1px dashed #86efac;border-radius:12px;padding:12px;margin-top:12px;color:#065f46}
     .hero_btn{display:inline-block;margin-top:14px;padding:12px 18px;background:var(--accent);color:#ffffff;border-radius:12px;font-weight:700;text-decoration:none}
@@ -48,11 +48,11 @@
     .callout{display:flex;gap:12px;align-items:flex-start;padding:12px;border:1px solid var(--border);border-radius:12px;background:#f9fafb}
     .step{display:flex;gap:10px;align-items:flex-start;}
     .step-num{min-width:28px;height:28px;border-radius:999px;background:#e5f7eb;color:#0f5132;display:flex;align-items:center;justify-content:center;font-weight:700}
-    .table_wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .table_wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
     @media (max-width:860px){.two-col{grid-template-columns:1fr}}
   </style>
 
-  <!-- FAQ / SEO Schema (сглаженные формулировки) -->
+  <!-- FAQ / SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -74,7 +74,8 @@
     <span class="badge">Suno.ai</span>
     <span class="badge">Россия</span>
     <h1>Как оплатить Suno (Suno.ai) в России в 2025 — через Telegram-бота</h1>
-    <p class="section_attention">💰 Самый удобный и недорогой способ оформить подписку Suno из России.</p>
+    <!-- заменено по просьбе: короче и без "Suno из России" в конце -->
+    <p class="section_attention">💰 Самый удобный и недорогой способ</p>
     <p class="section_p">Если платёж не проходит российской картой, воспользуйтесь Telegram-ботом: быстрый запуск и промокод для экономии.</p>
     <div class="nav-anchors">
       <a href="#how">Как оплатить</a>
@@ -102,11 +103,11 @@
   <section class="section_block two-col" id="solution">
     <div>
       <h2>Рабочий вариант: через Telegram-бота</h2>
-      <p class="section_p">Оплата проводится внутри РФ (СБП/карта), далее подписка Suno.ai активируется на указанный e-mail. Без ввода карты на зарубежных сайтах.</p>
+      <p class="section_p">Оплата проводится внутри РФ (СБП/карта), далее подписка активируется на указанный e-mail. Без ввода платёжных данных на зарубежных сайтах.</p>
       <ul class="section_list">
         <li>✅ Без VPN</li>
         <li>🚀 Обычно 10–20 минут до активации</li>
-        <li>🔒 Без ввода карты на зарубежных сайтах</li>
+        <li>🔒 Без ввода платёжных данных на зарубежных сайтах</li>
         <li>💬 Поддержка в Telegram</li>
       </ul>
       <a class="hero_btn" href="https://t.me/oplataneuroseti_bot?start=630451384" rel="nofollow noopener" target="_blank">Перейти к оформлению</a>
@@ -124,7 +125,7 @@
     </div>
   </section>
 
-  <!-- HOW (short, сглажено) -->
+  <!-- HOW -->
   <section class="section_block" id="how">
     <h2>Как оплатить — кратко</h2>
     <ol class="section_list">
@@ -137,9 +138,9 @@
     <p class="section_p muted">Подходит, когда стандартная оплата недоступна.</p>
   </section>
 
-  <!-- FLOW (сглаженные формулировки) -->
+  <!-- FLOW -->
   <section class="section_block" id="flow">
-    <h2>Оформление и оплата - подробно</h2>
+    <h2>Оформление и оплата — подробно</h2>
     <div class="callout">
       <div>🧭</div>
       <div>
@@ -179,7 +180,7 @@
     <p class="section_p">Промокод: <strong>openpay</strong></p>
   </section>
 
-  <!-- METHODS (сокращено) -->
+  <!-- METHODS -->
   <section class="section_block" id="methods">
     <h2>Варианты оплаты</h2>
     <p class="section_p">Чаще всего — СБП или карта банка РФ; при желании подойдёт виртуальная карта.</p>
@@ -210,7 +211,7 @@
     <p class="section_p">Оплата проводится внутри РФ; подписка активируется на указанный e-mail. Данные карты на зарубежных сайтах вводить не требуется. Поддержка — в Telegram.</p>
   </section>
 
-  <!-- FAQ (с одним обобщённым вопросом) -->
+  <!-- FAQ -->
   <section class="section_block" id="faq">
     <h2>FAQ</h2>
     <ul class="section_list">
@@ -224,7 +225,7 @@
     <a class="hero_btn" href="https://t.me/oplataneuroseti_bot?start=630451384" rel="nofollow noopener" target="_blank">Открыть бота</a>
   </section>
 
-  <!-- SEO EXTRA (мягко) -->
+  <!-- SEO EXTRA -->
   <section class="section_block" id="seo-extra">
     <h2>Коротко</h2>
     <p class="section_p">Для тех, кто оформляет подписку Suno.ai из России в 2025 году, удобен вариант через Telegram-бота с промокодом <strong>openpay</strong>.</p>
